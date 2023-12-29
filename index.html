@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Aren't you my dear sister?</h1>
+      </div>
+      
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        
+        <button id="myButton" class="btn" onmouseover="moveButton()"
+        onclick="moveButton()">NO</button>
+
+        <script>
+            
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            {
+                var b = document.getElementById("myButton");
+                var i = Math.floor(Math.random()*500)+1;
+                var j = Math.floor(Math.random()*500)+1;
+                b.style.left = i+"px";
+                b.style.top = j+"px";
+}
+}
+
+          
+          
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
